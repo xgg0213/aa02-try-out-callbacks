@@ -30,6 +30,10 @@ console.log(result4);   // false
 
 function none(array, cb) {
   // Your code here 
+  for (let el of array) {
+      if (cb(el) === true) return false;
+  }
+  return true;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

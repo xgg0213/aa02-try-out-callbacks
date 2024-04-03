@@ -33,6 +33,13 @@ console.log(
 
 let xorSelect = function(array, cb1, cb2) {
   // Your code here 
+  let newArr = [];
+
+  for (el of array) {
+    if ((cb1(el) === true && cb2(el) !== true ) || (cb1(el) !== true && cb2(el) === true)) {newArr.push(el)}
+  }
+
+  return newArr;
 };
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

@@ -23,7 +23,12 @@ console.log(test); // ['LAIKA', 'BELKA']
 
 function myForEach(array, cb) {
     // Your code here 
+    for (i in array) {
+        cb(array[i],i)
+    }
 }
+
+
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {

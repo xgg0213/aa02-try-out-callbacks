@@ -29,6 +29,11 @@ console.log(result4); // true
 
 function exactly(array, num, cb) {
   // Your code here 
+  let count = 0;
+  for (let el of array) {
+    if (cb(el) === true) count += 1;
+  }
+  return count === num;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
